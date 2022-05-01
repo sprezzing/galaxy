@@ -16,7 +16,7 @@ server.on('request', (request, response) => {
     BlacklistedIPs="ip1,ip2,ip3"
 
     */
-    var BlacklistedIPs = process.env.BlacklistedIPs || "127.0.0.1,0.0.0.0"; // if you want to test it out add "127.0.0.1" then do node . and as you will see you will be redirected to the blacklistServe
+    var BlacklistedIPs = process.env.BlacklistedIPs;
     let blacklist = BlacklistedIPs.split(",");
     var getClientIp = function (req) {
         var ipAddress = request.headers['x-forwarded-for'] || request.connection.remoteAddress;
@@ -29,7 +29,7 @@ server.on('request', (request, response) => {
         } return ipAddress;
     };
 
-    // if the users ip is blacklisted, then we will serve the bare server
+    // if the users ip is blacklisted, then we will serve the blacklisted dir
 
     var ipAddress = getClientIp(request);
     if (blacklist.includes(ipAddress)) {
