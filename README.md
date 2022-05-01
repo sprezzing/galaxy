@@ -6,6 +6,7 @@ An intersetlar Proxy Site!
 - Ab Cloak on default (i will add setting soon)
 - sexy ui
 - Blacklisting ip's (inspired from nebula)
+- Official site makes site unblocked on ls ig
 
 
 
