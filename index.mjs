@@ -16,7 +16,7 @@ server.on('request', (request, response) => {
     BlacklistedIPs="ip1,ip2,ip3"
 
     */
-    var BlacklistedIPs = process.env.BlacklistedIPs;
+    var BlacklistedIPs = process.env.BlacklistedIPs || "1.1.1.1";
     let blacklist = BlacklistedIPs.split(",");
     var getClientIp = function (req) {
         var ipAddress = request.headers['x-forwarded-for'] || request.connection.remoteAddress;
