@@ -29,7 +29,7 @@ server.on('request', (request, response) => {
         } return ipAddress;
     };
 
-    // if the users ip is blacklisted, then we will serve the bare server
+    // if the users ip is blacklisted, then we will serve the blacklisted dir
 
     var ipAddress = getClientIp(request);
     if (blacklist.includes(ipAddress)) {
