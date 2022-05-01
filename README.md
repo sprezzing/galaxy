@@ -1,5 +1,5 @@
 # Galaxy
-An intersetlar Proxy Site!
+An interstelar Proxy Site!
 
 
 # Features
