@@ -6,7 +6,6 @@
     <title>Galaxy</title>
     <link rel="stylesheet" href="css/galaxy.css" />
     <link rel="stylesheet" href="css/index.css" />
-    <link rel="stylesheet" href="css/sb.css" />
   </head>
   <body>
     <div class="cursor"><div class="planet"></div></div>
@@ -14,11 +13,18 @@
       <div class="mainhead">
         <div class="title"><h1>Galaxy</h1></div>
         <div class="desc">A fast Interstelar proxy!</div>
+        <input type="text" class="galaxy-input" />
+        <button class="search-btn">🚀 Launch</button>
       </div>
     </div>
 
     <canvas id="canvas" height="100%" width="100%"></canvas>
     <script src="js/galaxy.js"></script>
     <script src="js/cursor.js"></script>
+
+    <!-- Ultra-violet inclusion -->
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

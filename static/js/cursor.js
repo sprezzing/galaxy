@@ -34,7 +34,7 @@ document.querySelectorAll('.cursor').forEach(cursor => {
 
         return {
             ...defaultState,
-            ...computedState
+            ...defaultState
         }
     }
 

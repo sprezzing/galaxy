@@ -1,29 +1,8 @@
 /*
-* Table of Contents:
-*
-*   types:
-*   - vec2 [0, 0]
-*   - vec3 [0, 0, 0]
-*
-*   classes:
-*   - Star
-*   - StarField
-*
-*   helper functions:
-*   - randRange
-*   - mapRange
-*   - distance
-*   - limitToCircle
-*   - isInEllipse
-*   - getPointerInput // sends mouse or touch data to a callback
-*   - setup // where we initialize the Starfield.
-*
-*   ENV Vars:
-*   - IS_HIGH_RES // sort of an environment variable for detecting retina type screens
-*   - IS_MOBILE // detect if it's android, ios, or other common mobile devices
-*   - IS_HIGH_RES_AND_MOBILE // just combines the two above for convenience
+
+This file was built with tsc
+
 */
-// am I weird for enjoying writing functions like this by hand? lol
 function randRange(min, max) {
     return Math.random() * (max - min) + min;
 }
